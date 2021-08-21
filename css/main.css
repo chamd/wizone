@@ -1,0 +1,98 @@
+body {
+    transition: 1s;
+    background-color: #cccccc;
+    margin: 0 auto;
+    width: 650px;
+}
+
+span:not(#main):not(#iz) {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin-bottom: -4px;
+    transition: all .1s linear;
+}
+
+#main {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin-bottom: -4px;
+    transition: all .1s linear;
+}
+
+#iz {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 20px solid #e94f97;
+    background-color: white;
+    margin-bottom: -4px;
+    transition: all 2s ease;
+}
+
+/* var colors1 = {
+    "1": {
+        "1": "#bbb0dc",
+        "3": "#f1d2e7",
+        "5": "#db706c",
+        "7": "#fcf695",
+        "9": "#a7e0e1",
+        "11": "#cee5d5"
+    },
+    "11": {
+        "1": "#ffffff",
+        "3": "#b7d3e9",
+        "5": "#f1c3aa",
+        "7": "#f3aa51",
+        "9": "#567ace",
+        "11": "#d9598c"
+     */
+
+#wasd {
+    margin-left: 207.5px;
+}
+
+button {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    transition: all .1s ease;
+    border-radius: 10px;
+}
+
+#w {
+    margin-left: 80px;
+}
+
+#a {
+    margin-top: 80px;
+}
+
+#s {
+    margin-left: 80px;
+    margin-top: 160px;
+}
+
+#d {
+    margin-left: 160px;
+    margin-top: 80px;
+    
+}
+
+#e {
+    margin-left: 80px;
+    margin-top: 80px;
+    background-color: #e94f97;
+    border: 3px solid black;
+}
+
+.pressed {
+    transform: scale(1.1);
+}
