@@ -262,26 +262,13 @@ function checkColor() {
 function wasd(key, btn) {
     if (canMove) {
         switch (key) {
-            case "w":
-                move(row - 1, col);
-                break;
-            case "s":
-                move(row + 1, col);
-                break;
-            case "a":
-                move(row, col - 1);
-                break;
-            case "d":
-                move(row, col + 1);
-                break;
+            case "w": move(row - 1, col); break;
+            case "s": move(row + 1, col); break;
+            case "a": move(row, col - 1); break;
+            case "d": move(row, col + 1); break;
+            case "e": pickUp(row, col); break;
 
-
-            case "e":
-                pickUp(row, col);
-                break;
-
-            default:
-                break;
+            default: break;
         }
         if (btn) {
             document.getElementById(key).classList.add("pressed");
