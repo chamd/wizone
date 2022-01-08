@@ -1,0 +1,25 @@
+{
+  "background_color": "#ffffff",
+  "description": "참드앱 테스트 입니다.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "참드앱",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "참드앱s",
+  "start_url": "/wizone",
+  "theme_color": "#ffffff",
+  "categories": [],
+  "screenshots": [],
+  "shortcuts": [],
+  "icons": [{
+    "src": "icons/icon-152x152.png",
+    "sizes": "152x152"
+  }, {
+    "src": "icons/icon-192x192.png",
+    "sizes": "192x192"
+  }, {
+    "src": "icons/icon-512x512.png",
+    "sizes": "512x512"
+  }]
+}

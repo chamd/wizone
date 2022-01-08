@@ -283,7 +283,7 @@ window.addEventListener("keydown", e => {
     var key = e.key.toLowerCase();
     if (keys.includes(key)) {
         wasd(key, false);
-        document.getElementById(key).classList.add("pressed");    
+        document.getElementById(key).classList.add("pressed");
     }
 });
 
@@ -308,4 +308,8 @@ function hexToRgb(hex) {
     return result ? rgb : null;
 }
 
-//test
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').then((reg) => {
+        console.log('서비스 워커가 등록됨.', reg);
+    });
+}
