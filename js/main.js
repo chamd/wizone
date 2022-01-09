@@ -309,7 +309,7 @@ function hexToRgb(hex) {
 }
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').then((reg) => {
+    navigator.serviceWorker.register('./service-worker.js').then((reg) => {
         console.log('서비스 워커가 등록됨.', reg);
     });
 }
